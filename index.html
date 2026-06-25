@@ -1,0 +1,302 @@
+Berikut halaman HTML profil yang lebih modern, elegan, dan menarik dengan efek animasi, hero section, kartu informasi, dan tampilan profesional. Simpan sebagai **`index.html`** lalu buka di browser.
+
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil | Caravario Septryviandre Dacosta</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#00d4ff;
+    --secondary:#0099ff;
+    --dark:#07111f;
+    --card:#101d31;
+    --text:#eaf4ff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px;
+}
+
+.card{
+    width:100%;
+    max-width:1100px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+.top{
+    background:linear-gradient(135deg,var(--secondary),var(--primary));
+    padding:60px 30px;
+    text-align:center;
+    position:relative;
+}
+
+.avatar{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    margin:auto;
+    background:#fff;
+    color:var(--secondary);
+    font-size:70px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:6px solid rgba(255,255,255,.3);
+}
+
+.top h1{
+    margin-top:20px;
+    font-size:2.4rem;
+}
+
+.top p{
+    margin-top:10px;
+    opacity:.9;
+}
+
+.content{
+    padding:40px;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section-title{
+    color:var(--primary);
+    font-size:1.3rem;
+    margin-bottom:15px;
+    padding-left:15px;
+    border-left:4px solid var(--primary);
+}
+
+.about{
+    line-height:1.9;
+    color:#d6e8ff;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.info{
+    background:var(--card);
+    padding:20px;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.info:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,212,255,.2);
+}
+
+.info h3{
+    color:var(--primary);
+    font-size:.9rem;
+    margin-bottom:8px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skill{
+    background:linear-gradient(135deg,var(--secondary),var(--primary));
+    padding:12px 18px;
+    border-radius:50px;
+    font-size:.9rem;
+    font-weight:500;
+}
+
+.quote{
+    text-align:center;
+    font-size:1.2rem;
+    line-height:1.8;
+    font-style:italic;
+    color:#bfefff;
+}
+
+.footer{
+    text-align:center;
+    padding:25px;
+    background:rgba(255,255,255,.04);
+    color:#a8c9e6;
+}
+
+.glow{
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,.2);
+    border-radius:50%;
+    filter:blur(100px);
+    top:-120px;
+    right:-80px;
+}
+
+@media(max-width:768px){
+    .top h1{
+        font-size:1.8rem;
+    }
+
+    .avatar{
+        width:130px;
+        height:130px;
+        font-size:50px;
+    }
+
+    .content{
+        padding:25px;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="card">
+
+    <div class="top">
+        <div class="glow"></div>
+
+        <!-- Ganti huruf C dengan foto jika diinginkan -->
+        <div class="avatar">C</div>
+
+        <h1>Caravario Septryviandre Dacosta</h1>
+        <p>Pribadi Profesional • Disiplin • Berorientasi Pada Hasil</p>
+    </div>
+
+    <div class="content">
+
+        <div class="section">
+            <h2 class="section-title">Tentang Saya</h2>
+            <p class="about">
+                Saya adalah individu yang memiliki semangat tinggi untuk terus berkembang,
+                belajar, dan menghadapi tantangan baru. Saya dikenal sebagai pribadi yang
+                bertanggung jawab, disiplin, dan mampu bekerja secara mandiri maupun dalam tim.
+                Saya percaya bahwa integritas, kerja keras, dan kemauan untuk terus belajar
+                merupakan fondasi utama dalam meraih kesuksesan dan memberikan kontribusi positif
+                bagi lingkungan sekitar.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Informasi Pribadi</h2>
+
+            <div class="info-grid">
+                <div class="info">
+                    <h3>Nama Lengkap</h3>
+                    <p>Caravario Septryviandre Dacosta</p>
+                </div>
+
+                <div class="info">
+                    <h3>Tempat, Tanggal Lahir</h3>
+                    <p>Bandung, 25 September 1994</p>
+                </div>
+
+                <div class="info">
+                    <h3>Alamat</h3>
+                    <p>Cingcin Permata Indah H.213 RT 07/RW 18</p>
+                </div>
+
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>caravariosdacosta94@gmail.com</p>
+                </div>
+
+                <div class="info">
+                    <h3>Telepon</h3>
+                    <p>082282819666</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Keahlian</h2>
+
+            <div class="skills">
+                <span class="skill">Komunikasi</span>
+                <span class="skill">Kerja Tim</span>
+                <span class="skill">Problem Solving</span>
+                <span class="skill">Leadership</span>
+                <span class="skill">Manajemen Waktu</span>
+                <span class="skill">Adaptasi Cepat</span>
+                <span class="skill">Microsoft Office</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Minat & Hobi</h2>
+            <p class="about">
+                Teknologi, pengembangan diri, membaca, olahraga,
+                menjelajahi wawasan baru, dan berbagai aktivitas
+                yang dapat meningkatkan keterampilan serta produktivitas.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Motto Hidup</h2>
+
+            <div class="quote">
+                "Kesuksesan bukan hanya tentang mencapai tujuan,
+                tetapi tentang terus berkembang dan memberikan manfaat
+                bagi orang lain."
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 | Profil Pribadi Caravario Septryviandre Dacosta
+    </div>
+
+</div>
+</section>
+
+</body>
+</html>
+```
+
+Jika Anda memiliki **foto profil**, saya bisa membuatkan versi yang lebih premium dengan:
+
+* Foto profil otomatis
+* Efek neon/glassmorphism
+* Tombol WhatsApp & Email
+* Animasi AOS (scroll animation)
+* Download CV PDF
+* Dark/Light Mode
+* Tampilan seperti website portofolio profesional.
